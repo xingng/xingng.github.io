@@ -1,1 +1,105 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-07-01T20:44:57+08:00</updated><id>/feed.xml</id><title type="html">梓匠轮舆</title><subtitle>Persistance is Your Superiority</subtitle><entry><title type="html">POISSON DISTRIBUTION</title><link href="/math/" rel="alternate" type="text/html" title="POISSON DISTRIBUTION" /><published>2021-07-01T00:00:00+08:00</published><updated>2021-07-01T00:00:00+08:00</updated><id>/math</id><content type="html" xml:base="/math/">\[xyz\]</content><author><name></name></author><category term="math" /><category term="statistics" /><summary type="html">\[xyz\]</summary></entry></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-07-02T00:18:25+08:00</updated><id>/feed.xml</id><title type="html">梓匠轮舆</title><subtitle>Persistance is Your Superiority</subtitle><entry><title type="html">POISSON DISTRIBUTION</title><link href="/math/" rel="alternate" type="text/html" title="POISSON DISTRIBUTION" /><published>2021-07-01T00:00:00+08:00</published><updated>2021-07-01T00:00:00+08:00</updated><id>/math</id><content type="html" xml:base="/math/">&lt;!-- vscode-markdown-toc --&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;ol&gt;
+      &lt;li&gt;&lt;a href=&quot;#the-origin-of-poisson-distribution&quot;&gt;The Origin of Poisson distribution&lt;/a&gt;
+        &lt;ul&gt;
+          &lt;li&gt;1.1. &lt;a href=&quot;#binomial-distribution&quot;&gt;Binomial Distribution&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;1.2. &lt;a href=&quot;#the-specific-problem-for-poisson-distriution&quot;&gt;The Specific Problem for Poisson Distriution&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;1.3. &lt;a href=&quot;#deriviative-of-poisson-distribution&quot;&gt;Deriviative of Poisson Distribution&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;ol&gt;
+      &lt;li&gt;&lt;a href=&quot;#statistical-propertics-of-poisson-distribution&quot;&gt;Statistical Propertics of Poisson Distribution&lt;/a&gt;
+        &lt;ul&gt;
+          &lt;li&gt;2.1. &lt;a href=&quot;#-the-conditions-of-poisson-distribution&quot;&gt; The Conditions of Poisson Distribution&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;2.2. &lt;a href=&quot;#-descriptive-statistics&quot;&gt; Descriptive Statistics&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;ul&gt;
+          &lt;li&gt;2.2.1. &lt;a href=&quot;#mean&quot;&gt;Mean&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;2.2.2. &lt;a href=&quot;#variance&quot;&gt;Variance&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;2.2.3. &lt;a href=&quot;#moment-generating-function&quot;&gt;Moment Generating Function&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;2.2.4. &lt;a href=&quot;#skewness&quot;&gt;Skewness&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;2.2.5. &lt;a href=&quot;#kurtorsis&quot;&gt;Kurtorsis&lt;/a&gt;
+    * 2.3. &lt;a href=&quot;#other-properties&quot;&gt;Other Properties&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;2.3.1. &lt;a href=&quot;#additive&quot;&gt;Additive&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;2.3.2. &lt;a href=&quot;#conditional-probability&quot;&gt;Conditional Probability&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- vscode-markdown-toc-config
+	numbering=true
+	autoSave=true
+	/vscode-markdown-toc-config --&gt;
+&lt;!-- /vscode-markdown-toc --&gt;
+
+&lt;h2 id=&quot;1-the-origin-of-poisson-distribution&quot;&gt;1. &lt;a name=&quot;the-origin-of-poisson-distribution&quot;&gt;&lt;/a&gt;The Origin of Poisson distribution&lt;/h2&gt;
+
+&lt;h3 id=&quot;11-binomial-distribution&quot;&gt;1.1. &lt;a name=&quot;binomial-distribution&quot;&gt;&lt;/a&gt;Binomial Distribution&lt;/h3&gt;
+&lt;p&gt;Binomial distribution was applied when facing a probability problem with only two outcomes which is “success” and “failed”. For instance, 
+  when we are flipping a count repeatly will follow the binomial distribution.&lt;br /&gt;
+  &lt;br /&gt;
+  Strictly, a probability problem which follow binomial distribution must satisfie the following condition:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;The sample space with only two outcomes which is success and failed (they must be mutually exclusive), thus the probability of success will be notated as p and 1-p for failed.&lt;/li&gt;
+  &lt;li&gt;The number of we repeat the experiment is notated as n, these repeated experiment must be independent.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;12-the-specific-problem-for-poisson-distriution&quot;&gt;1.2. &lt;a name=&quot;the-specific-problem-for-poisson-distriution&quot;&gt;&lt;/a&gt;The Specific Problem for Poisson Distriution&lt;/h3&gt;
+&lt;p&gt;In the case of Poisson dist, we apply this distribution when we are solving the problem of finding the probability of number of event occur
+  in a certain interval. The classical problem is to find the probability of numeber of cars passing a road in a fixed time interval. Here is the key,&lt;strong&gt;in a very short time interval, the problem will become the car will come or not&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Specifically, let us compare this problem with the condition of binomial one by one:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;In a very short time interval, the problem will has only two outcomes which is come or not that they are mutually exclusive.&lt;/li&gt;
+  &lt;li&gt;For a longer time interval, we can cut the time interval into n of very short moments, this imply we are repeating the experiment (
+  like we flip the coin repeatly, this time we are observe the car will come or not repeatly) and this also follow binomial distrbution!&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;13-deriviative-of-poisson-distribution&quot;&gt;1.3. &lt;a name=&quot;deriviative-of-poisson-distribution&quot;&gt;&lt;/a&gt;Deriviative of Poisson Distribution&lt;/h3&gt;
+&lt;p&gt;Obviously, the Poisson distribution is the binomial distribution with n-&amp;gt; infinity as we are cutting a time interval into infinity number of very
+  very short moments.&lt;/p&gt;
+
+&lt;p&gt;Now, let us derive this result!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/xingng/image/main/data/math-20210701.svg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The n(n-1)…(n-k+1) would has n of terms and divide by n power n will approach to 1 when n approach to infinity. Then, by substituting the definition of e we can got the last equation. Surprisingly, the last equation is same with the probability mass function of Poisson distribution!&lt;/p&gt;
+
+&lt;h2 id=&quot;2-statistical-propertics-of-poisson-distribution&quot;&gt;2. &lt;a name=&quot;statistical-propertics-of-poisson-distribution&quot;&gt;&lt;/a&gt;Statistical Propertics of Poisson Distribution&lt;/h2&gt;
+
+&lt;h3 id=&quot;21--the-conditions-of-poisson-distribution&quot;&gt;2.1. &lt;a name=&quot;-the-conditions-of-poisson-distribution&quot;&gt;&lt;/a&gt; The Conditions of Poisson Distribution&lt;/h3&gt;
+
+&lt;h3 id=&quot;22--descriptive-statistics&quot;&gt;2.2. &lt;a name=&quot;-descriptive-statistics&quot;&gt;&lt;/a&gt; Descriptive Statistics&lt;/h3&gt;
+
+&lt;h4 id=&quot;221-mean&quot;&gt;2.2.1. &lt;a name=&quot;mean&quot;&gt;&lt;/a&gt;Mean&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/xingng/image/main/data/Poisson%20(1).svg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;222-variance&quot;&gt;2.2.2. &lt;a name=&quot;variance&quot;&gt;&lt;/a&gt;Variance&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/xingng/image/main/data/Poisson%20(2).svg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;223-moment-generating-function&quot;&gt;2.2.3. &lt;a name=&quot;moment-generating-function&quot;&gt;&lt;/a&gt;Moment Generating Function&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/xingng/image/main/data/Poisson%20(3).svg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;224-skewness&quot;&gt;2.2.4. &lt;a name=&quot;skewness&quot;&gt;&lt;/a&gt;Skewness&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/xingng/image/main/data/Poisson%20(4).svg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/xingng/image/main/data/Poisson%20(6).svg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/xingng/image/main/data/Poisson%20(5).svg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;225-kurtorsis&quot;&gt;2.2.5. &lt;a name=&quot;kurtorsis&quot;&gt;&lt;/a&gt;Kurtorsis&lt;/h4&gt;
+
+&lt;h3 id=&quot;23-other-properties&quot;&gt;2.3. &lt;a name=&quot;other-properties&quot;&gt;&lt;/a&gt;Other Properties&lt;/h3&gt;
+&lt;h4 id=&quot;231-additive&quot;&gt;2.3.1. &lt;a name=&quot;additive&quot;&gt;&lt;/a&gt;Additive&lt;/h4&gt;
+&lt;h4 id=&quot;232-conditional-probability&quot;&gt;2.3.2. &lt;a name=&quot;conditional-probability&quot;&gt;&lt;/a&gt;Conditional Probability&lt;/h4&gt;</content><author><name></name></author><category term="math" /><category term="statistics" /><summary type="html">The Origin of Poisson distribution 1.1. Binomial Distribution 1.2. The Specific Problem for Poisson Distriution 1.3. Deriviative of Poisson Distribution Statistical Propertics of Poisson Distribution 2.1. The Conditions of Poisson Distribution 2.2. Descriptive Statistics 2.2.1. Mean 2.2.2. Variance 2.2.3. Moment Generating Function 2.2.4. Skewness 2.2.5. Kurtorsis * 2.3. Other Properties 2.3.1. Additive 2.3.2. Conditional Probability 1. The Origin of Poisson distribution 1.1. Binomial Distribution Binomial distribution was applied when facing a probability problem with only two outcomes which is “success” and “failed”. For instance, when we are flipping a count repeatly will follow the binomial distribution. Strictly, a probability problem which follow binomial distribution must satisfie the following condition: The sample space with only two outcomes which is success and failed (they must be mutually exclusive), thus the probability of success will be notated as p and 1-p for failed. The number of we repeat the experiment is notated as n, these repeated experiment must be independent. 1.2. The Specific Problem for Poisson Distriution In the case of Poisson dist, we apply this distribution when we are solving the problem of finding the probability of number of event occur in a certain interval. The classical problem is to find the probability of numeber of cars passing a road in a fixed time interval. Here is the key,in a very short time interval, the problem will become the car will come or not. Specifically, let us compare this problem with the condition of binomial one by one: In a very short time interval, the problem will has only two outcomes which is come or not that they are mutually exclusive. For a longer time interval, we can cut the time interval into n of very short moments, this imply we are repeating the experiment ( like we flip the coin repeatly, this time we are observe the car will come or not repeatly) and this also follow binomial distrbution! 1.3. Deriviative of Poisson Distribution Obviously, the Poisson distribution is the binomial distribution with n-&amp;gt; infinity as we are cutting a time interval into infinity number of very very short moments. Now, let us derive this result! The n(n-1)…(n-k+1) would has n of terms and divide by n power n will approach to 1 when n approach to infinity. Then, by substituting the definition of e we can got the last equation. Surprisingly, the last equation is same with the probability mass function of Poisson distribution! 2. Statistical Propertics of Poisson Distribution 2.1. The Conditions of Poisson Distribution 2.2. Descriptive Statistics 2.2.1. Mean 2.2.2. Variance 2.2.3. Moment Generating Function 2.2.4. Skewness 2.2.5. Kurtorsis 2.3. Other Properties 2.3.1. Additive 2.3.2. Conditional Probability</summary></entry><entry><title type="html">EXPONENTIAL DISTRIBUTION</title><link href="/math/" rel="alternate" type="text/html" title="EXPONENTIAL DISTRIBUTION" /><published>2021-07-01T00:00:00+08:00</published><updated>2021-07-01T00:00:00+08:00</updated><id>/math</id><content type="html" xml:base="/math/"></content><author><name></name></author><category term="math" /><category term="statistics" /><summary type="html"></summary></entry><entry><title type="html">GAMMA DISTRIBUTION</title><link href="/math/" rel="alternate" type="text/html" title="GAMMA DISTRIBUTION" /><published>2021-07-01T00:00:00+08:00</published><updated>2021-07-01T00:00:00+08:00</updated><id>/math</id><content type="html" xml:base="/math/"></content><author><name></name></author><category term="math" /><category term="statistics" /><summary type="html"></summary></entry></feed>
