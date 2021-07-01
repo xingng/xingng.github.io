@@ -524,6 +524,19 @@ nav {
 
 } 
 
+.about{
+  margin-left: 50px; 
+  background-color: $oc-gray-1;
+  border: 2px inset $oc-gray-0;
+  border-radius: 20px;
+
+  p {
+    font-weight: 100;
+    margin-left: 20px;
+    line-height: 10px;
+  }
+}
+
 .pagination {
   border-top: 1px solid $divider-color;
   font-weight: 300;

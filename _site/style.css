@@ -551,6 +551,19 @@ nav a {
   max-width: 1000px;
 }
 
+.about {
+  margin-left: 50px;
+  background-color: #f1f3f5;
+  border: 2px inset #f8f9fa;
+  border-radius: 20px;
+}
+
+.about p {
+  font-weight: 100;
+  margin-left: 20px;
+  line-height: 10px;
+}
+
 .pagination {
   border-top: 1px solid #f1f3f5;
   font-weight: 300;
