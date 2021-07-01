@@ -395,7 +395,7 @@ img {
 
 .site-info .site-avatar img {
   display: inline-block;
-  border-radius: 2px;
+  border-radius: 50%;
 }
 
 .site-name {
@@ -469,8 +469,8 @@ nav a {
 
 .posts {
   margin: 50px;
-  background-color: #f1f3f5;
-  border: 2px inset #f8f9fa;
+  background-color: #f8f9fa;
+  border: 1px inset #f8f9fa;
   border-radius: 20px;
 }
 
@@ -533,7 +533,8 @@ nav a {
 }
 
 .post .read-more {
-  font-size: 25px;
+  font-size: 15px;
+  font-style: oblique;
 }
 
 .page {
@@ -556,12 +557,25 @@ nav a {
   background-color: #f1f3f5;
   border: 2px inset #f8f9fa;
   border-radius: 20px;
+  text-align: center;
+}
+
+.about img {
+  margin: 0 auto;
+  display: block;
+  max-width: 240px;
+  max-height: 240px;
 }
 
 .about p {
   font-weight: 100;
-  margin-left: 20px;
-  line-height: 10px;
+  margin-left: 50px;
+  line-height: 20px;
+}
+
+.tagger {
+  margin-left: 50px;
+  background-color: #f8f9fa;
 }
 
 .pagination {

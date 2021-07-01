@@ -365,7 +365,7 @@ img {
 
     img {
       display: inline-block;
-      border-radius: 2px;
+      border-radius: 50%;
     }
   }
 }
@@ -438,8 +438,8 @@ nav {
 
 .posts{
   margin: 50px; 
-  background-color: $oc-gray-1;
-  border: 2px inset $oc-gray-0;
+  background-color: $oc-gray-0;
+  border: 1px inset $oc-gray-0;
   border-radius: 20px;
 
 
@@ -505,7 +505,8 @@ nav {
   }
 
   .read-more {
-    font-size: 25px;
+    font-size: 15px;
+    font-style: oblique;
   }
 }
 
@@ -529,12 +530,25 @@ nav {
   background-color: $oc-gray-1;
   border: 2px inset $oc-gray-0;
   border-radius: 20px;
+  text-align: center;
+
+  img {
+    margin:0 auto;
+    display: block;
+    max-width: 240px;
+    max-height: 240px;
+  }
 
   p {
     font-weight: 100;
-    margin-left: 20px;
-    line-height: 10px;
+    margin-left: 50px;
+    line-height: 20px;
   }
+}
+
+.tagger{
+  margin-left: 50px; 
+  background-color: $oc-gray-0;
 }
 
 .pagination {

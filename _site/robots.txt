@@ -1,1 +1,1 @@
-Sitemap: /xing/sitemap.xml
+Sitemap: /sitemap.xml

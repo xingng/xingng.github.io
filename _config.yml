@@ -14,11 +14,9 @@ description: Persistance is Your Superiority
 #
 
 # 你的博客logo图片URL，建议尺寸不超过300px × 300px
-avatar: https://i.loli.net/2021/07/01/Q6meH2uOT9JKhpU.png
-
+avatar: https://raw.githubusercontent.com/xingng/image/main/data/math.jpg
 # 你的favicon（出现在浏览器tab上）图片URL，建议使用较小(64px × 64px)的图片
-favicon: https://i.loli.net/2021/07/01/Q6meH2uOT9JKhpU.png
-
+favicon: https://raw.githubusercontent.com/xingng/image/main/data/math.jpg
 # 菜单中的按钮
 navigation:
   - name: 首页
