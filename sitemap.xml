@@ -7,10 +7,10 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
-<loc>http://xingng.github.io/foo.html </loc>
-<lastmod>2020-02-24 </lastmod>
+  <loc>https://xingng.github.io/sitemap.xml</loc>
+  <lastmod>2021-07-02T06:09:19+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
-
 
 <url>
   <loc>https://xingng.github.io/</loc>
