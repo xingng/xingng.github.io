@@ -9,20 +9,7 @@
     margin: 0 0 30px;
     color: $dark-purple;
   }
-  .tags {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    li {
-      a {
-        display: inline-block;
-        color: $dark-purple;
-        &:hover {
-          opacity: .8;
-        }
-      }
-    }
-  }
+  
   .tag-list {
     span {
       a {

@@ -3,22 +3,9 @@
   
     
     <url>
-      <loc>https://xingng.github.io//math.html</loc>
+      <loc>https://xingng.github.io/poisson.html</loc>
       
-        <lastmod>2021-02-11T03:32:20+08:00</lastmod>
-      
-      
-        <changefreq>daily</changefreq>
-      
-      
-        <priority>0.5</priority></url>
-    
-  
-    
-    <url>
-      <loc>https://xingng.github.io//math.html</loc>
-      
-        <lastmod>2021-02-11T03:32:20+08:00</lastmod>
+        <lastmod>2021-07-02T03:32:20+08:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -27,12 +14,25 @@
         <priority>0.5</priority></url>
     
   
+    
+    <url>
+      <loc>https://xingng.github.io/gamma.html</loc>
+      
+        <lastmod>2021-07-02T00:00:00+08:00</lastmod>
+      
+      
+        <changefreq>daily</changefreq>
+      
+      
+        <priority>0.5</priority></url>
+    
+  
   
     
     <url>
-      <loc>https://xingng.github.io//404.html</loc>
+      <loc>https://xingng.github.io/404.html</loc>
       
-        <lastmod>2021-06-30T18:29:58+08:00</lastmod>
+        <lastmod>2021-07-02T23:30:25+08:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -45,24 +45,9 @@
   
     
     <url>
-      <loc>https://xingng.github.io//about.html</loc>
+      <loc>https://xingng.github.io/about.html</loc>
       
-        <lastmod>2021-06-30T18:29:58+08:00</lastmod>
-      
-      
-        <changefreq>daily</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>https://xingng.github.io//all-posts.json</loc>
-      
-        <lastmod>2021-06-30T18:29:58+08:00</lastmod>
+        <lastmod>2021-07-02T23:30:25+08:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -75,24 +60,9 @@
   
     
     <url>
-      <loc>https://xingng.github.io//archive.html</loc>
+      <loc>https://xingng.github.io/all-posts.json</loc>
       
-        <lastmod>2021-06-30T18:29:58+08:00</lastmod>
-      
-      
-        <changefreq>daily</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>https://xingng.github.io//</loc>
-      
-        <lastmod>2021-06-30T18:29:58+08:00</lastmod>
+        <lastmod>2021-07-02T23:30:25+08:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -105,41 +75,9 @@
   
     
     <url>
-      <loc>https://xingng.github.io//posts-by-tag.json</loc>
+      <loc>https://xingng.github.io/archive.html</loc>
       
-        <lastmod>2021-06-30T18:29:58+08:00</lastmod>
-      
-      
-        <changefreq>daily</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>https://xingng.github.io//search.json</loc>
-      
-        <lastmod>2021-06-30T18:29:58+08:00</lastmod>
-      
-      
-        <changefreq>daily</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-    
-  
-    
-  
-    
-    <url>
-      <loc>https://xingng.github.io//tag.html</loc>
-      
-        <lastmod>2021-06-30T18:29:58+08:00</lastmod>
+        <lastmod>2021-07-02T23:30:25+08:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -152,9 +90,9 @@
   
     
     <url>
-      <loc>https://xingng.github.io//tags.html</loc>
+      <loc>https://xingng.github.io/</loc>
       
-        <lastmod>2021-06-30T18:29:58+08:00</lastmod>
+        <lastmod>2021-07-02T23:30:25+08:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -165,5 +103,96 @@
     </url>
     
   
+    
+    <url>
+      <loc>https://xingng.github.io/ipfs-404.html</loc>
+      
+        <lastmod>2021-07-02T23:30:25+08:00</lastmod>
+      
+      
+        <changefreq>daily</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://xingng.github.io/posts-by-tag.json</loc>
+      
+        <lastmod>2021-07-02T23:30:25+08:00</lastmod>
+      
+      
+        <changefreq>daily</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://xingng.github.io/search.json</loc>
+      
+        <lastmod>2021-07-02T23:30:25+08:00</lastmod>
+      
+      
+        <changefreq>daily</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+  
+    
+    <url>
+      <loc>https://xingng.github.io/tag.html</loc>
+      
+        <lastmod>2021-07-02T23:30:25+08:00</lastmod>
+      
+      
+        <changefreq>daily</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://xingng.github.io/tags.html</loc>
+      
+        <lastmod>2021-07-02T23:30:25+08:00</lastmod>
+      
+      
+        <changefreq>daily</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://xingng.github.io/feed.xml</loc>
+      
+        <lastmod>2021-07-02T23:30:25+08:00</lastmod>
+      
+      
+        <changefreq>daily</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
   
 </urlset>

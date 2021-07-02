@@ -1,0 +1,44 @@
+I"¯<!-- vscode-markdown-toc -->
+<ul>
+  <li>
+    <ol>
+      <li><a href="#the-origin-of-poisson-distribution">The Origin of Poisson distribution</a>
+        <ul>
+          <li>1.1. <a href="#binomial-distribution">Binomial Distribution</a></li>
+          <li>1.2. <a href="#the-specific-problem-for-poisson-distriution">The Specific Problem for Poisson Distriution</a></li>
+          <li>1.3. <a href="#deriviative-of-poisson-distribution">Deriviative of Poisson Distribution</a></li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li><a href="#statistical-propertics-of-poisson-distribution">Statistical Propertics of Poisson Distribution</a>
+        <ul>
+          <li>2.1. <a href="#-the-conditions-of-poisson-distribution"> The Conditions of Poisson Distribution</a></li>
+          <li>2.2. <a href="#-descriptive-statistics"> Descriptive Statistics</a>
+            <ul>
+              <li>2.2.1. <a href="#mean">Mean</a></li>
+              <li>2.2.2. <a href="#variance">Variance</a></li>
+              <li>2.2.3. <a href="#moment-generating-function">Moment Generating Function</a></li>
+              <li>2.2.4. <a href="#skewness">Skewness</a></li>
+              <li>2.2.5. <a href="#kurtorsis">Kurtorsis</a></li>
+            </ul>
+          </li>
+          <li>2.3. <a href="#other-properties">Other Properties</a>
+            <ul>
+              <li>2.3.1. <a href="#addition-of-two-poisson">Addition of Two Poisson</a></li>
+              <li>2.3.2. <a href="#conditional-probability">Conditional Probability</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li><a href="#reference:">Reference:</a></li>
+    </ol>
+  </li>
+</ul>
+:ET

@@ -403,7 +403,7 @@ html, body {
 html {
     line-height: 1.75;
     letter-spacing: 0.002em;
-    font-size: 1.375rem;
+    font-size: 1.2rem;
 }
 body {
   font-family: var(--font1);
@@ -430,7 +430,7 @@ img {
   max-width: 100%;
 }
 a {
-    color: var(--text);
+    color: #0b7285;
     -webkit-transition: all 1s;
     transition: all 1s;
     -webkit-transition-timing-function: cubic-bezier(0.2,1,0.3,1);
@@ -481,6 +481,7 @@ svg {
 
 .flex-container {
   will-change: opacity;
+  background-image: url("https://raw.githubusercontent.com/xingng/image/main/data/giphy%20(2).gif");
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -535,6 +536,16 @@ svg {
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  padding: 20px;
+  background-color: #343a40;
+  color: #ffffff;
+  -webkit-border-top-left-radius: 20px;
+          border-top-left-radius: 20px;
+  -webkit-border-top-right-radius: 20px;
+          border-top-right-radius: 20px;
+  -webkit-box-shadow: 0px 2px 4px var(--shadow);
+          box-shadow: 0px 2px 4px var(--shadow)
+  
 }
 .wrapper {
   width: 960px;
@@ -562,7 +573,7 @@ svg {
 .main-header {
   font-family: var(--font2), sans-serif;
   padding: 15px 0;
-  background-color: var(--background);
+  background-color: #ced4da;
   -webkit-box-shadow: 0px -5px 15px var(--shadow);
           box-shadow: 0px -5px 15px var(--shadow);
 }
@@ -571,6 +582,7 @@ svg {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  background-color: #ced4da;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
@@ -581,7 +593,7 @@ svg {
           align-items: center;
 }
 .main-header .logo {
-  width: 80%;
+  width: 35%;
   position: relative;
   text-align: center;
   color:var(--main);
@@ -1313,6 +1325,7 @@ div.tag-cloud{
     font-weight: var(--font2-regular);
     display: block;
     text-transform: lowercase}
+    
 .tags li a:hover {
     background: var(--accent);
     color: white !important;
@@ -1442,22 +1455,23 @@ tweet a {
 }
 
 .page-image .cover-image {
-  height: 100%;
+  height: 90%;
   width: 100%;
+
 }
 
 .page-content {
   margin: auto;
-  margin-top: -80px;
-  background-color: var(--background);
-  padding: 20px;
+  margin-top: -250px;
+  background-color: #ffffff;
+  padding: 30px;
   -webkit-border-top-left-radius: 20px;
           border-top-left-radius: 20px;
   -webkit-border-top-right-radius: 20px;
           border-top-right-radius: 20px;
   -webkit-box-shadow: 0px 2px 4px var(--shadow);
           box-shadow: 0px 2px 4px var(--shadow);
-  max-width: 800px;
+  max-width: 2000px;
 }
 /* full width image in posts */
 img[src$="#full"] {
@@ -1489,10 +1503,11 @@ img + small, img + br + small {
 }
 .header-page h1 {
   font-weight: var(--font2-regular);
-  font-size: 4.25rem;
+  font-size: 3.85rem;
+  color:#0b7285;
   text-align: left;
   margin: 0 0 10px;
-  color: var(--text)
+
 }
 
 .header-page .page-date {
@@ -1848,10 +1863,10 @@ img + small, img + br + small {
 }
 .list-group-title {
   margin-bottom:5px;
-  font-size:.75em;
+  font-size: 1.5em;
 }
 .list-group-title a {
-    color: var(--text);
+    color: #ffffff;
     text-transform: lowercase;
     font-family: var(--font2);
     font-weight:var(--font2-bold);
@@ -1862,8 +1877,8 @@ img + small, img + br + small {
 .list-item a {
     display: block;
     text-decoration: none;
-    color:var(--main);
-    font-size:1.25em;
+    color: #CBCCCD;
+    font-size:1.00em;
     font-weight: var(--font2-light);
     font-family:var(--font2)
 }
@@ -1884,9 +1899,10 @@ img + small, img + br + small {
 }
 a.post-list-title {
     text-decoration: none;
+    color: #ffffff;
     font-family: var(--font2);
     font-weight: var(--font2-bold);
-    font-size: 2em;
+    font-size: 2.5em;
 }
 a.read-more {
     color: var(--accent);

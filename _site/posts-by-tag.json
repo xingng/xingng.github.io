@@ -6,9 +6,9 @@
   "tag" : "statistics",
   "posts" : [
       
-      "./math.html",
+      "./poisson.html",
       
-      "./math.html"
+      "./gamma.html"
       
     ]
   } 

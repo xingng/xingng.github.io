@@ -1,12 +1,12 @@
 # Site settings
-title: xingng.github.io
-description: 'Artificial Intelligence trends and concepts made easy.' # this means to ignore newlines until "baseurl:"
+title: 梓匠輪輿
+description: 'Persistance is Your Superiority' # this means to ignore newlines until "baseurl:"
 permalink: ':title:output_ext'
-baseurl: "/xingng.github.io" # the subpath of your site, e.g. /blog
-url: "https://xingng.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-logo: "/assets/img/branding/MVM-logo-full.svg"
-logo-icon: "/assets/img/branding/MVM-symbol.svg"
-logo-icon-SEO: "/assets/img/branding/MVM-symbol-black.png" # must be a non SVG file
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://xingng.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+logo: "/assets/img/branding/pi.svg"
+logo-icon: "/assets/img/branding/pi.svg"
+logo-icon-SEO: "/assets/img/branding/pi.svg" # must be a non SVG file
 
 # Night/Dark mode
 # Default mode is "auto", "auto" is for auto nightshift
@@ -20,21 +20,22 @@ logo-icon-SEO: "/assets/img/branding/MVM-symbol-black.png" # must be a non SVG f
 # the browser is closed or not)
 night_mode: "auto"
 
-logo-dark: "/assets/img/branding/MVM-logo-full-dark.svg"
+logo-dark: "/assets/img/branding/pi.svg"
 highlight_theme: syntax-base16.monokai.dark # select a dark theme for the code highlighter if needed
 
 # Author settings
-author: XING # add your name
-author-pic: math.jpg
-about-author: An University Student
+author:  梓匠輪輿
+author-pic: pi.svg
+about-author: I am an undergraduated student who favorite in learning and <br>studying mathematics and machine learning related topics. Due to the constraint of experience and time, if any correction available, please kindly contact me via email ngxing116@gmail.com. I will appreciate for your instruction.
+
 # Contact links
 email: ngxing116@gmail.com # Add your Email address
-website: tthps://amaynez.github.io # Add your website
+website: https://xingng.github.io # Add your website
 github: xingng # Add your Github handle
 gitalk:
-    repo: xingng.github.io 
-    client_id: bc69803d7b37629f69b6
-    client_secret:  ef7aa3bf2b3e6e212d11785d04628920df9487ec
+    repo: xingng.github.io //  github 上博客仓库的名字
+    client_id: 66e25f2fd51dfd824057 // Client ID
+    client_secret: ea4c23c6750045379b53416c25090374ed033c87 // Client Secret
 
 # Newsletter
 mailchimp: "https://github.us1.list-manage.com/subscribe/post?u=8ece198b3eb260e6838461a60&amp;id=397d90b5f4"
@@ -42,6 +43,10 @@ mailchimp: "https://github.us1.list-manage.com/subscribe/post?u=8ece198b3eb260e6
 # Disqus
 discus_identifier: xingng.github.io # Add your discus identifier
 comments_curtain: yes # leave empty to show the disqus embed directly
+
+# Tracker
+analytics: G-R8SZS2YBZK
+fbadmin: ar.maybach
 
 # Paginate
 paginate: 6
