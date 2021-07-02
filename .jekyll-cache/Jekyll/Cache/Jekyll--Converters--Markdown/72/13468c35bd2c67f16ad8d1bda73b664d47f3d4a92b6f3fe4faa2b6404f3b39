@@ -1,4 +1,4 @@
-I"Å<!-- vscode-markdown-toc -->
+I"œ(<!-- vscode-markdown-toc -->
 <ul>
   <li>
     <ol>
@@ -16,17 +16,21 @@
       <li><a href="#statistical-propertics-of-poisson-distribution">Statistical Propertics of Poisson Distribution</a>
         <ul>
           <li>2.1. <a href="#-the-conditions-of-poisson-distribution"> The Conditions of Poisson Distribution</a></li>
-          <li>2.2. <a href="#-descriptive-statistics"> Descriptive Statistics</a></li>
-        </ul>
-        <ul>
-          <li>2.2.1. <a href="#mean">Mean</a></li>
-          <li>2.2.2. <a href="#variance">Variance</a></li>
-          <li>2.2.3. <a href="#moment-generating-function">Moment Generating Function</a></li>
-          <li>2.2.4. <a href="#skewness">Skewness</a></li>
-          <li>2.2.5. <a href="#kurtorsis">Kurtorsis</a>
-    * 2.3. <a href="#other-properties">Other Properties</a></li>
-          <li>2.3.1. <a href="#additive">Additive</a></li>
-          <li>2.3.2. <a href="#conditional-probability">Conditional Probability</a></li>
+          <li>2.2. <a href="#-descriptive-statistics"> Descriptive Statistics</a>
+            <ul>
+              <li>2.2.1. <a href="#mean">Mean</a></li>
+              <li>2.2.2. <a href="#variance">Variance</a></li>
+              <li>2.2.3. <a href="#moment-generating-function">Moment Generating Function</a></li>
+              <li>2.2.4. <a href="#skewness">Skewness</a></li>
+              <li>2.2.5. <a href="#kurtorsis">Kurtorsis</a></li>
+            </ul>
+          </li>
+          <li>2.3. <a href="#other-properties">Other Properties</a>
+            <ul>
+              <li>2.3.1. <a href="#addition-of-two-poisson">Addition of Two Poisson</a></li>
+              <li>2.3.2. <a href="#conditional-probability">Conditional Probability</a></li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ol>
@@ -66,6 +70,8 @@
 <p>Obviously, the Poisson distribution is the binomial distribution with n-&gt; infinity as we are cutting a time interval into infinity number of very
   very short moments.</p>
 
+<p>By classical probability, the probability will be the mean of event occured divide by the number of experiments. Thus, the <em>p</em> was equal to lamda over n, where lambda the mean of events occured in a certain time interval.</p>
+
 <p>Now, let us derive this result!</p>
 
 <p><img src="https://raw.githubusercontent.com/xingng/image/main/data/math-20210701.svg" alt="" /></p>
@@ -76,32 +82,70 @@
 
 <h3 id="21--the-conditions-of-poisson-distribution">2.1. <a name="-the-conditions-of-poisson-distribution"></a> The Conditions of Poisson Distribution</h3>
 
+<ol>
+  <li>The events occured previously was independent with the future events</li>
+  <li>The events was occured in a certain continous interval, which could be cutted infinitely for <em>p</em> approach to zero</li>
+  <li>The rate of events is a constant which is directly propotional with the length of interval</li>
+</ol>
+
 <h3 id="22--descriptive-statistics">2.2. <a name="-descriptive-statistics"></a> Descriptive Statistics</h3>
 
 <h4 id="221-mean">2.2.1. <a name="mean"></a>Mean</h4>
 
 <p><img src="https://raw.githubusercontent.com/xingng/image/main/data/Poisson%20(1).svg" alt="" /></p>
 
+<p>Due to the Poisson is the extreme of Binomial, thus we also can use the mean of Binomial to find the Poissonâ€™s mean.</p>
+
 <h4 id="222-variance">2.2.2. <a name="variance"></a>Variance</h4>
 
 <p><img src="https://raw.githubusercontent.com/xingng/image/main/data/Poisson%20(2).svg" alt="" /></p>
+
+<p>When n approach to infinity the <em>q</em> will approach to 1, thus the variance also is lambda.</p>
 
 <h4 id="223-moment-generating-function">2.2.3. <a name="moment-generating-function"></a>Moment Generating Function</h4>
 
 <p><img src="https://raw.githubusercontent.com/xingng/image/main/data/Poisson%20(3).svg" alt="" /></p>
 
+<p>The moment generating function is important in deriving the raw moments and addition of two random variable.
+By substituting the maclurin series of exponential we could get the final result.</p>
+
 <h4 id="224-skewness">2.2.4. <a name="skewness"></a>Skewness</h4>
 
 <p><img src="https://raw.githubusercontent.com/xingng/image/main/data/Poisson%20(4).svg" alt="" /></p>
 
+<p>The third order raw moment will be equal to the expectation of x cube. Thus, by taking the third order differential of moment generating function and substituting t=0, we could get the expectation of x cube.</p>
+
 <p><img src="https://raw.githubusercontent.com/xingng/image/main/data/Poisson%20(6).svg" alt="" /></p>
+
+<p>By expanding the cube of x-mean and substituting the variance and mean, we find out the lopsidedness also is equal to lambda!</p>
 
 <p><img src="https://raw.githubusercontent.com/xingng/image/main/data/Poisson%20(5).svg" alt="" /></p>
 
+<p>To get the Pearsonâ€™s coefficient of skewness, we must divide the third raw moments by cube of standard deviation. The final result is the reciprocal of root lambda implies that the skewness always is positive which is skew to the right. Due to this is reciprocal, the higher the lambda will to the skewness approach to zero which represent when the lambda getting larger, the distribution will become symmetry which could be approximated by normal distribution.</p>
+
 <h4 id="225-kurtorsis">2.2.5. <a name="kurtorsis"></a>Kurtorsis</h4>
 
+<p><img src="https://raw.githubusercontent.com/xingng/image/main/data/Poisson%20(7).svg" alt="" /></p>
+
+<p>By the previous three order of expectation, we can infer the kurtosis of Poisson also would be the lambda. The coefficient of kurtosis is the reciprocal of lambda which also implies when the lambda getting larger, this distribution will approximate to the normal distribution where follow the Law of Large Numbers.</p>
+
 <h3 id="23-other-properties">2.3. <a name="other-properties"></a>Other Properties</h3>
-<h4 id="231-additive">2.3.1. <a name="additive"></a>Additive</h4>
+<h4 id="231-addition-of-two-poisson">2.3.1. <a name="addition-of-two-poisson"></a>Addition of Two Poisson</h4>
+
+<p><img src="https://raw.githubusercontent.com/xingng/image/main/data/Poisson%20(10).svg" alt="" /></p>
+
+<p>Suppose that random variable x1 and x2 is independent, we could find the joint distribution by product directly.
+Next, by applying total probability rule, we could derive the margin distribution of sum of x1 and x2 which is y.
+In the last 2 step, substituting the binomial expansion to get the sum of two parameters power n.</p>
+
+<p>A suprise result is the sum of two Poisson still is Poisson with parameter of sum of two lambda! Naturally, when we are making the summation, we just interest in what is the total number there are which is y. Specifically, if the first Poisson represents the number of cats and the second one represents the number of dogs, the y will represents the number of animals or pets but we are no longer intereted in how many dogs and cats there are. If you has 2 cats and 3 dogs, this will be the result with 3 cats and 2 dogs, as we just interest in their sum which is 5.</p>
+
 <h4 id="232-conditional-probability">2.3.2. <a name="conditional-probability"></a>Conditional Probability</h4>
+
+<p><img src="https://raw.githubusercontent.com/xingng/image/main/data/Poisson%20(9).svg" alt="" /></p>
+
+<p>In the first step, the intersect of x1 and x1+x2 will become the joint distribution of x1 and x2. Due to we assume the x1 and x2 are independent, thus we can product them directly. With some of simplifying, we could see the final results is Binomial Distribution with p=lambda1/sum of two lambda and n=x1+x2.</p>
+
+<p>Thus we could conclude the Poisson distribution x1 conditional on sum of two Poisson distribution, x1 and x2 will follow the Binomial Distribution. The meaning behind here is we diminished the sample space from infinite number of cutting to just only the sum of two Poisson. Thus, it the new sample space, the only two outcome available, which is x1 and x2 which correspond to success and failed. Therefore, the result is Binomial is expected.</p>
 
 :ET

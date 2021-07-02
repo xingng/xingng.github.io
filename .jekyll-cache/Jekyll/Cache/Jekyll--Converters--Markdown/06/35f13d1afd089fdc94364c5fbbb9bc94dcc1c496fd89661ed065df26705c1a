@@ -1,0 +1,168 @@
+I"=-<!-- vscode-markdown-toc -->
+<ul>
+  <li>
+    <ol>
+      <li><a href="#the-origin-of-poisson-distribution">The Origin of Poisson distribution</a>
+        <ul>
+          <li>1.1. <a href="#binomial-distribution">Binomial Distribution</a></li>
+          <li>1.2. <a href="#the-specific-problem-for-poisson-distriution">The Specific Problem for Poisson Distriution</a></li>
+          <li>1.3. <a href="#deriviative-of-poisson-distribution">Deriviative of Poisson Distribution</a></li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li><a href="#statistical-propertics-of-poisson-distribution">Statistical Propertics of Poisson Distribution</a>
+        <ul>
+          <li>2.1. <a href="#-the-conditions-of-poisson-distribution"> The Conditions of Poisson Distribution</a></li>
+          <li>2.2. <a href="#-descriptive-statistics"> Descriptive Statistics</a>
+            <ul>
+              <li>2.2.1. <a href="#mean">Mean</a></li>
+              <li>2.2.2. <a href="#variance">Variance</a></li>
+              <li>2.2.3. <a href="#moment-generating-function">Moment Generating Function</a></li>
+              <li>2.2.4. <a href="#skewness">Skewness</a></li>
+              <li>2.2.5. <a href="#kurtorsis">Kurtorsis</a></li>
+            </ul>
+          </li>
+          <li>2.3. <a href="#other-properties">Other Properties</a>
+            <ul>
+              <li>2.3.1. <a href="#addition-of-two-poisson">Addition of Two Poisson</a></li>
+              <li>2.3.2. <a href="#conditional-probability">Conditional Probability</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+<!-- vscode-markdown-toc-config
+  numbering=true
+  autoSave=true
+  /vscode-markdown-toc-config -->
+<!-- /vscode-markdown-toc -->
+
+<h2 id="1-the-origin-of-poisson-distribution">1. <a name="the-origin-of-poisson-distribution"></a>The Origin of Poisson distribution</h2>
+
+<h3 id="11-binomial-distribution">1.1. <a name="binomial-distribution"></a>Binomial Distribution</h3>
+
+<p>Binomial distribution was applied when facing a probability problem with only two outcomes which are “success” and “failed”. For instance, 
+  when we are flipping a coin repeatedly will follow the binomial distribution.<br />
+  <br />
+  Strictly, a probability problem which follows binomial distribution must satisfy the following condition:</p>
+<ol>
+  <li>The sample space with only two outcomes which are success and failed (they must be mutually exclusive), thus the probability of success will be notated as p and 1-p for failed.</li>
+  <li>The number of we repeat the experiment is notated as n, this repeated experiment must be independent.</li>
+</ol>
+
+<h3 id="12-the-specific-problem-for-poisson-distriution">1.2. <a name="the-specific-problem-for-poisson-distriution"></a>The Specific Problem for Poisson Distriution</h3>
+
+<p>In the case of Poisson dist, we apply this distribution when we are solving the problem of finding the probability of the number of events that occur in a certain interval. The classical problem is to find the probability of the number of cars passing a road in a fixed time interval. Here is the key,<strong>in a very short time interval, the problem will become the car will come or not</strong>.</p>
+
+<p>Specifically, let us compare this problem with the condition of binomial one by one:</p>
+
+<ol>
+  <li>In a very short time interval, the problem will have only two outcomes that are come or not that they are mutually exclusive.</li>
+  <li>For a longer time interval, we can cut the time interval into n of very short moments, this implies we are repeating the experiment (like we flip the coin repeatedly, this time we are observing the car will come or not repeatedly) and this also follows binomial distribution!</li>
+</ol>
+
+<h3 id="13-deriviative-of-poisson-distribution">1.3. <a name="deriviative-of-poisson-distribution"></a>Deriviative of Poisson Distribution</h3>
+
+<p>Obviously, the Poisson distribution is the binomial distribution with n-&gt; infinity as we are cutting a time interval into infinity number of very
+  very short moments.</p>
+
+<p>By classical probability, the probability will be the mean of the event occurred divide by the number of experiments. Thus, the <em>p</em> was equal to lambda over n, where lambda the mean of events that occurred in a certain time interval.</p>
+
+<p>Now, let us derive this result!</p>
+
+<p><img src="https://raw.githubusercontent.com/xingng/image/main/data/math-20210701.svg" alt="" /></p>
+
+<p>The n(n-1)…(n-k+1) would has n of terms and divide by n power n will approach 1 when n approaches to infinity. Then, by substituting the definition of e we can got the last equation. Surprisingly, the last equation is the same with the probability mass function of Poisson distribution!</p>
+
+<h2 id="2-statistical-propertics-of-poisson-distribution">2. <a name="statistical-propertics-of-poisson-distribution"></a>Statistical Propertics of Poisson Distribution</h2>
+
+<h3 id="21--the-conditions-of-poisson-distribution">2.1. <a name="-the-conditions-of-poisson-distribution"></a> The Conditions of Poisson Distribution</h3>
+
+<ol>
+  <li>The events occurred previously was independent with the future events</li>
+  <li>The events was occured in a certain continuous interval, which could be cutted infinitely for the <em>p</em> approach to zero</li>
+  <li>The rate of events is a constant which is directly proportional with the length of interval</li>
+</ol>
+
+<h3 id="22--descriptive-statistics">2.2. <a name="-descriptive-statistics"></a> Descriptive Statistics</h3>
+
+<h4 id="221-mean">2.2.1. <a name="mean"></a>Mean</h4>
+
+<p><img src="https://raw.githubusercontent.com/xingng/image/main/data/Poisson%20(1).svg" alt="" /></p>
+
+<p>Due to the Poisson is the extreme of Binomial, thus we also can use the mean of Binomial to find the Poisson’s mean.</p>
+
+<h4 id="222-variance">2.2.2. <a name="variance"></a>Variance</h4>
+
+<p><img src="https://raw.githubusercontent.com/xingng/image/main/data/Poisson%20(2).svg" alt="" /></p>
+
+<p>When n approaches to infinity the <em>q</em> will approach to 1, thus the variance also is lambda.</p>
+
+<h4 id="223-moment-generating-function">2.2.3. <a name="moment-generating-function"></a>Moment Generating Function</h4>
+
+<p><img src="https://raw.githubusercontent.com/xingng/image/main/data/Poisson%20(3).svg" alt="" /></p>
+
+<p>The moment generating function is important in deriving the raw moments and the addition of two random variable.
+By substituting the maclurin series of exponential we could get the final result.</p>
+
+<h4 id="224-skewness">2.2.4. <a name="skewness"></a>Skewness</h4>
+
+<p><img src="https://raw.githubusercontent.com/xingng/image/main/data/Poisson%20(4).svg" alt="" /></p>
+
+<p>The third order raw moment will be equal to the expectation of x cube. Thus, by taking the third-order differential of moment generating function and substituting t=0, we could get the expectation of x cube.</p>
+
+<p><img src="https://raw.githubusercontent.com/xingng/image/main/data/Poisson%20(6).svg" alt="" /></p>
+
+<p>By expanding the cube of x-mean and substituting the variance and mean, we find out the lopsidedness also is equal to lambda!</p>
+
+<p><img src="https://raw.githubusercontent.com/xingng/image/main/data/Poisson%20(5).svg" alt="" /></p>
+
+<p>To get the Pearson’s coefficient of skewness, we must divide the third raw moment by cube of standard deviation. The final result is the reciprocal of root lambda implies that the skewness always is positive which is skew to the right. Due to this is reciprocal, the higher the lambda will to the skewness approach to zero which represents when the lambda getting larger, the distribution will become symmetry which could be approximated by normal distribution.</p>
+
+<h4 id="225-kurtorsis">2.2.5. <a name="kurtorsis"></a>Kurtorsis</h4>
+
+<p><img src="https://raw.githubusercontent.com/xingng/image/main/data/Poisson%20(7).svg" alt="" /></p>
+
+<p>By the previous three orders of expectation, we can infer the kurtosis of Poisson also would be the lambda. The coefficient of kurtosis is the reciprocal of lambda which also implies when the lambda getting larger, this distribution will approximate to the normal distribution where follow the Law of Large Numbers.</p>
+
+<h3 id="23-other-properties">2.3. <a name="other-properties"></a>Other Properties</h3>
+<h4 id="231-addition-of-two-poisson">2.3.1. <a name="addition-of-two-poisson"></a>Addition of Two Poisson</h4>
+
+<p><img src="https://raw.githubusercontent.com/xingng/image/main/data/Poisson%20(10).svg" alt="" /></p>
+
+<p>Suppose that random variables x1 and x2 are independent, we could find the joint distribution by-product directly.
+Next, by applying total probability rule, we could derive the margin distribution of the sum of x1 and x2 which is y.
+In the last 2 steps, substituting the binomial expansion to get the sum of two parameters power n.</p>
+
+<p>A surprise result is the sum of two Poisson still is Poisson with the parameter of the sum of two lambda! Naturally, when we are making the summation, we are just interested in what is the total number there is which is y. Specifically, if the first Poisson represents the number of cats and the second one represents the number of dogs, the y will represent the number of animals or pets but we are no longer intereted in how many dogs and cats there are. If you have 2 cats and 3 dogs, this will be the result with 3 cats and 2 dogs, as we just interest in their sum which is 5.</p>
+
+<h4 id="232-conditional-probability">2.3.2. <a name="conditional-probability"></a>Conditional Probability</h4>
+
+<p><img src="https://raw.githubusercontent.com/xingng/image/main/data/Poisson%20(9).svg" alt="" /></p>
+
+<p>In the first step, the intersect of x1 and x1+x2 will become the joint distribution of x1 and x2. Due to we assume the x1 and x2 are independent, thus we can product them directly. With some simplifying, we could see the final results is Binomial Distribution with p=lambda1/sum of two lambdas and n=x1+x2.</p>
+
+<p>Thus we could conclude the Poisson distribution x1 conditional on the sum of two Poisson distributions, x1 and x2 will follow the Binomial Distribution. The meaning behind here is we diminished the sample space from the infinite number of cutting to just only the sum of two Poisson. Thus, in the new sample space, the only two outcomes available, which are x1 and x2 which correspond to success and failed. Therefore, the result is Binomial is expected.</p>
+
+<p><br /></p>
+
+<h2 id="reference">Reference:</h2>
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=Cd1r98qABl8&amp;list=PLP1Ynr8cs97tXstIH1RIKwB0RpGJN3IWV&amp;index=1">https://www.youtube.com/watch?v=Cd1r98qABl8&amp;list=PLP1Ynr8cs97tXstIH1RIKwB0RpGJN3IWV&amp;index=1</a></li>
+  <li><a href="https://www.youtube.com/watch?v=Jq-v5Ms7mLc&amp;list=PLP1Ynr8cs97tXstIH1RIKwB0RpGJN3IWV&amp;index=4"> </a></li>
+  <li><a href="https://www.youtube.com/watch?v=NjXlMwXpuEE&amp;list=PLP1Ynr8cs97sCOdgQ91C6HR0hPNU8w2xR&amp;index=2"> </a></li>
+  <li><a href="https://www.youtube.com/watch?v=CPwC91em29E&amp;list=PLP1Ynr8cs97sCOdgQ91C6HR0hPNU8w2xR&amp;index=6"> </a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Poisson_distribution"> </a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Binomial_distribution"></a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Skewness"></a></li>
+  <li><a href="https://brilliant.org/wiki/poisson-distribution/"></a></li>
+  <li><a href="https://stats.stackexchange.com/questions/95993/can-anyone-clarify-the-concept-of-a-sum-of-random-variables"></a></li>
+</ul>
+
+:ET
